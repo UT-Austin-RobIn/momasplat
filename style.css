@@ -167,15 +167,8 @@ input[type="range"]::-moz-range-thumb { width: 16px; height: 16px; border-radius
 }
 .hero-authors span { white-space: nowrap; }
 .hero-authors strong, .hero-affil strong { font-size: 1.15em; font-weight: 700; margin-left: 1px; }
-.hero-affil { margin: 0; font-size: 1rem; color: #fff; text-shadow: 0 1px 10px rgba(0, 0, 0, 0.55); }
+.hero-affil { margin: 0 0 1.7rem; font-size: 1rem; color: #fff; text-shadow: 0 1px 10px rgba(0, 0, 0, 0.55); }
 .hero-notes { display: block; margin-top: 0.3rem; font-size: 0.85rem; color: rgba(255, 255, 255, 0.85); }
-.hero-venue {
-  display: inline-block; margin: 1.15rem auto 1.7rem; text-decoration: none; text-wrap: balance;
-  font: 600 0.78rem var(--mono); letter-spacing: 0.14em; text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.92); text-shadow: 0 1px 10px rgba(0, 0, 0, 0.6);
-}
-.hero-venue:hover { color: #fff; }
-.venue-pip { display: inline-block; vertical-align: 0.1em; margin-right: 0.55rem; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 8px rgba(76, 196, 111, 0.7); }
 .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
 .hero-caption {
   position: absolute; right: 16px; bottom: 14px; margin: 0; font-size: 0.72rem; color: #9aa6b2;
@@ -302,6 +295,7 @@ input[type="range"]::-moz-range-thumb { width: 16px; height: 16px; border-radius
 .object-frame video { aspect-ratio: 3 / 1; object-fit: cover; }
 .gen-frame { cursor: zoom-in; }
 .gen-frame video { aspect-ratio: 16 / 9; object-fit: cover; transition: transform .5s ease; }
+.gen-frame video[data-key="bottle"] { aspect-ratio: 2400 / 1080; } /* 5x4 grid, wider than the others */
 .gen-frame:hover video { transform: scale(1.03); }
 .expand {
   position: absolute; right: 10px; top: 10px; width: 34px; height: 34px; border-radius: 9px; display: grid; place-items: center;
